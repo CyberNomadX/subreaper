@@ -1,19 +1,9 @@
 #!/usr/bin/env python3
 
-import argparse
+from input_handler import parse_args
 
 def main():
-    parser = argparse.ArgumentParser(
-        description="SubReaper - Passive Subdomain Enumeration Tool"
-    )
-    parser.add_argument(
-        "--domain",
-        "-d",
-        help="Target domain to enumerate subdomains for",
-        required=True
-    )
-
-    args = parser.parse_args()
+    args = parse_args()
     domain = args.domain
 
     print(f"[+] Starting passive subdomain enumeration for: {domain}")
