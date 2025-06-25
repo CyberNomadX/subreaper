@@ -1,0 +1,2 @@
+aiohttp          # Async HTTP client for API requests
+dnspython        # DNS resolution support
